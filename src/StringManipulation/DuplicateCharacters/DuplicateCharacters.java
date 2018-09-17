@@ -1,9 +1,9 @@
 package StringManipulation.DuplicateCharacters;
 
+// This is a O(max(N,M)) solution as this has two for loops running.
+
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 public class DuplicateCharacters {
 
