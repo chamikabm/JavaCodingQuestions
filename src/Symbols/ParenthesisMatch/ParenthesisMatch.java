@@ -11,7 +11,7 @@ public class ParenthesisMatch {
 
     private static boolean isParenthesisMatch(String parenthesisString) {
         Stack stack = new Stack();
-        if (parenthesisString == null || parenthesisString.isEmpty()){
+        if (parenthesisString == null || parenthesisString.isEmpty()) {
             return false;
         }
 
