@@ -46,7 +46,8 @@ public class StringRevers {
         return new String(chars);
     }
 
-    public static String  getReversedString4(String stringToReverse) {
+    // Using recursive algorithm
+    private static String  getReversedString4(String stringToReverse) {
 
         if (stringToReverse.length() == 1) {
             return stringToReverse;
