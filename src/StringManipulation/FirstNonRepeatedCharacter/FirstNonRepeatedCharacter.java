@@ -1,8 +1,6 @@
 package StringManipulation.FirstNonRepeatedCharacter;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.Map.Entry;
 
 /**
@@ -20,6 +18,7 @@ public class FirstNonRepeatedCharacter {
     public static void main(String[] args) {
         String stringToCheck = "mmmmorning";
         System.out.println(printFirstNonRepeatedCharacter(stringToCheck));
+        System.out.println(printFirstNonRepeatedCharacter2(stringToCheck));
     }
 
     private static Character printFirstNonRepeatedCharacter(String stringToCheck) {
@@ -31,6 +30,21 @@ public class FirstNonRepeatedCharacter {
         for (Entry<Character, Integer> entry : counts.entrySet()) {
             if (entry.getValue() == 1) {
                 return entry.getKey();
+            }
+        }
+
+        throw new RuntimeException("didn't find any non repeated Character");
+    }
+
+    private static Character printFirstNonRepeatedCharacter2(String stringToCheck) {
+        HashMap<Character, Integer> charMap = new HashMap<>();
+        for (char c : stringToCheck.toCharArray()) {
+            charMap.put(c, charMap.containsKey(c) ? charMap.get(c) + 1 : 1);
+        }
+
+        for (char c : stringToCheck.toCharArray()) {
+            if(charMap.get(c) == 1) {
+                return c;
             }
         }
 
