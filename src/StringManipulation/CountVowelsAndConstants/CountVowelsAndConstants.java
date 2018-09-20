@@ -66,7 +66,6 @@ public class CountVowelsAndConstants {
         for (Entry entry : constantsMap.entrySet()) {
             System.out.println(entry.getKey() + " : " + entry.getValue());
         }
-
     }
 
     // Unicode table : https://www.utf8-chartable.de/unicode-utf8-table.pl?utf8=dec&unicodeinhtml=dec

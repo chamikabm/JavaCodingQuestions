@@ -1,8 +1,5 @@
 package StringManipulation.StringRevers;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 /**
  * How to reverse String in Java using Iteration and Recursion? (solution)
  * Your task is to write a program to reverse String in Java without using StringBuffer class.
