@@ -4,12 +4,15 @@ public class CheckStringContainsString {
 
     public static void main(String[] args) {
         String firstString = "This has been awesome";
-        String secondString = "been";
+        String secondString = "has";
 
         System.out.println(checkStringContainsSubString(firstString, secondString));
+        System.out.println(checkStringContainsSubString2(firstString, secondString));
     }
 
-    private static boolean checkStringContainsSubString(String firstString, String secondString) {
+    private static boolean checkStringContainsSubString(String s1, String s2) {
+        String firstString = s1.replaceAll(" ", "");
+        String secondString = s2.replaceAll(" ", "");
         if (secondString.length() > firstString.length()) {
             return false;
         }
@@ -29,5 +32,11 @@ public class CheckStringContainsString {
 
 
         return hasString;
+    }
+
+    private static boolean checkStringContainsSubString2(String firstString, String secondString) {
+        StringBuilder sb = new StringBuilder(firstString.replaceAll(" ",""));
+
+        return sb.indexOf(secondString.replaceAll(" ","")) != -1;
     }
 }
