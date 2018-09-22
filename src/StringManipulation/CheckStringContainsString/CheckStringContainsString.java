@@ -22,15 +22,10 @@ public class CheckStringContainsString {
         for (int i = 0; i < firstString.length(); i++) {
             if (firstString.charAt(i) == secondString.charAt(0)) {
                 for (int j = 0; j < secondString.length(); j++) {
-                    if (secondString.charAt(j) == firstString.charAt(i+j)) {
-                        hasString = true;
-                    } else {
-                        hasString = false;
-                    }
+                    hasString = secondString.charAt(j) == firstString.charAt(i + j);
                 }
             }
         }
-
 
         return hasString;
     }
