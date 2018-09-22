@@ -8,6 +8,7 @@ public class CheckStringContainsString {
 
         System.out.println(checkStringContainsSubString(firstString, secondString));
         System.out.println(checkStringContainsSubString2(firstString, secondString));
+        System.out.println(checkStringContainsSubString3(firstString, secondString));
     }
 
     private static boolean checkStringContainsSubString(String s1, String s2) {
@@ -38,5 +39,9 @@ public class CheckStringContainsString {
         StringBuilder sb = new StringBuilder(firstString.replaceAll(" ",""));
 
         return sb.indexOf(secondString.replaceAll(" ","")) != -1;
+    }
+
+    private static boolean checkStringContainsSubString3(String firstString, String secondString) {
+        return firstString.replaceAll(" ","").contains(secondString.replaceAll(" ",""));
     }
 }
