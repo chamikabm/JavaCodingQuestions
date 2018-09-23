@@ -4,7 +4,7 @@ public class ReverseANumber {
 
     public static void main(String[] args) {
         int numberToReverse = 4568;
-//        System.out.println(reverseNumber(numberToReverse));
+        System.out.println(reverseNumber(numberToReverse));
         System.out.println(reverseNumber2(numberToReverse));
     }
 
