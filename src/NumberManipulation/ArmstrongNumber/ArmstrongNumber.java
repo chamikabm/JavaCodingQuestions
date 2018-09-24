@@ -1,4 +1,4 @@
-package NumberManipulation;
+package NumberManipulation.ArmstrongNumber;
 
 /**
  * Write a program to find the given number is Armstrong number or not?

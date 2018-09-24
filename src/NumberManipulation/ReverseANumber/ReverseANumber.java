@@ -1,4 +1,4 @@
-package NumberManipulation;
+package NumberManipulation.ReverseANumber;
 
 public class ReverseANumber {
 
