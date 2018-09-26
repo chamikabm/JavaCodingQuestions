@@ -10,7 +10,7 @@ package NumberManipulation.PrimeNumber;
  */
 public class PrimeNumber {
     public static void main(String[] args) {
-        int numberToCheck = 5;
+        int numberToCheck = 1;
         System.out.println(isPrimeNumber(numberToCheck));
     }
 
@@ -19,14 +19,18 @@ public class PrimeNumber {
             return false;
         }
 
-        boolean isPrime = false;
-
-        while (numberToCheck != 1) {
-            isPrime = numberToCheck%2 == 0;
-            numberToCheck = numberToCheck/2;
+        if (numberToCheck == 1) {
+            return true;
         }
 
+        int divider = numberToCheck;
 
-        return isPrime;
+        while (--divider != 1) {
+            if (numberToCheck%divider == 0) {
+                return false;
+            }
+        }
+
+        return true;
     }
 }
