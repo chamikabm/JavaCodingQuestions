@@ -10,7 +10,7 @@ package NumberManipulation.PrimeNumber;
  */
 public class PrimeNumber {
     public static void main(String[] args) {
-        int numberToCheck = 4;
+        int numberToCheck = 9;
         System.out.println(isPrimeNumber(numberToCheck));
         System.out.println(isPrimeNumber2(numberToCheck));
     }
@@ -30,17 +30,34 @@ public class PrimeNumber {
         return true;
     }
 
+    /**
+     *
+     If a number n is not a prime, it can be factored into two factors a and b:
+
+     n = a*b
+
+     If both a and b were greater than the square root of n, a*b would be greater than n.
+     So at least one of those factors must be less than or equal to the square root of n, and to check if n is prime,
+     we only need to test for factors less than or equal to the square root.
+
+     Summary :
+
+     Because if n = a*b and a <= b then a*a <= a*b = n
+     To clarify, this means we have to test only till floor(sqrt(n))
+
+     * @param numberToCheck
+     * @return
+     */
     private static boolean isPrimeNumber2(int numberToCheck) {
         if (numberToCheck <= 2) {
             return false;
         }
-
-        int sqrt = (int) Math.sqrt(numberToCheck) + 1;
-        for (int i = 2; i < sqrt; i++) {
+        for (int i = 2; i <= Math.sqrt(numberToCheck); i++) {
             if (numberToCheck % i == 0) {
                 return false;
             }
         }
+
         return true;
     }
 
