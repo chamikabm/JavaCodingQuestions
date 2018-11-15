@@ -14,12 +14,12 @@ public class IntegerPalindrome {
 
         int number2 = 1234;
         System.out.println(isPalindromeNumber(number2));
+
+        int number3 = 1;
+        System.out.println(isPalindromeNumber(number3));
     }
 
     private static boolean isPalindromeNumber(int number) {
-        if (Integer.toString(number).length()  < 2) {
-            return true;
-        }
 
         int palindrome = number; // copied number into variable
         int reverse = 0;
