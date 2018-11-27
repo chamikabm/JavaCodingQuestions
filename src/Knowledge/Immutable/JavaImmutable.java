@@ -31,8 +31,8 @@ public class JavaImmutable {
      * }
      * Foo doesn't have to worry that the caller to getValue() might change the text in the string.
      *
-     * If you imagine a similar class to Foo, but with a StringBuilder rather than a String as a member,
-     * you can see that a caller to getValue() would be able to alter the StringBuilder attribute of a Foo instance.
+     * If you imagine a similar class to Foo, but with a StringBuilderTest rather than a String as a member,
+     * you can see that a caller to getValue() would be able to alter the StringBuilderTest attribute of a Foo instance.
      *
      * Also beware of the different kinds of immutability you might find: Eric Lippert wrote a blog article about this.
      * Basically you can have objects whose interface is immutable but behind the scenes actual mutables private state
@@ -86,9 +86,9 @@ public class JavaImmutable {
      *
      * With objects, of course, you can often do both:
      *
-     *      StringBuilder sb = new StringBuilder("foo");
+     *      StringBuilderTest sb = new StringBuilderTest("foo");
      *      sb.append("bar"); // mutate the object identified by sb
-     *      sb = new StringBuilder(); // change sb to identify a different object
+     *      sb = new StringBuilderTest(); // change sb to identify a different object
      *      sb = null; // change sb not to identify any object at all
      *
      * In common parlance, both of these will be described as "changing sb", because people will use "sb"
