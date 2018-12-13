@@ -3,6 +3,8 @@ package NumberManipulation.ConvertBinaryToDecimal;
 /**
  * Program: Write a program to convert binary to decimal number.
  *
+ * Link : http://www.java2novice.com/java-interview-programs/binary-to-decimal/
+ *
  * Description:
  *
  * Write a program to convert binary format to decimal number using numeric operations.
