@@ -1,4 +1,4 @@
-package NumberSeries.MissingNumberInAnArray;
+package ArrayManipulation.MissingNumberInAnArray;
 
 /**
  * Java Puzzle – Find Missing Number In An Array
