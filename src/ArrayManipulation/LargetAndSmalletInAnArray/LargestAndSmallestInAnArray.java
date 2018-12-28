@@ -13,7 +13,7 @@ public class LargestAndSmallestInAnArray {
         largestAndSmallest(new int[]{-20, 34, 21, -87, 92, Integer.MAX_VALUE});
         largestAndSmallest(new int[]{10, Integer.MIN_VALUE, -2});
         largestAndSmallest(new int[]{Integer.MAX_VALUE, 40, Integer.MAX_VALUE});
-        largestAndSmallest(new gint[]{1, -1, 0});
+        largestAndSmallest(new int[]{1, -1, 0});
     }
 
     public static void largestAndSmallest(int[] numbers) {
