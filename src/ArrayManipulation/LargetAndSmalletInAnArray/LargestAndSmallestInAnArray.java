@@ -8,12 +8,12 @@ import java.util.Arrays;
  *  Link : http://www.java67.com/2014/02/how-to-find-largest-and-smallest-number-array-in-java.html
  *
  */
-public class LargetAndSmalletInAnArray {
+public class LargestAndSmallestInAnArray {
     public static void main(String args[]) {
         largestAndSmallest(new int[]{-20, 34, 21, -87, 92, Integer.MAX_VALUE});
         largestAndSmallest(new int[]{10, Integer.MIN_VALUE, -2});
         largestAndSmallest(new int[]{Integer.MAX_VALUE, 40, Integer.MAX_VALUE});
-        largestAndSmallest(new int[]{1, -1, 0});
+        largestAndSmallest(new gint[]{1, -1, 0});
     }
 
     public static void largestAndSmallest(int[] numbers) {
