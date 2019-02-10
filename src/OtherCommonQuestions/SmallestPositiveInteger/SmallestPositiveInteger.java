@@ -1,6 +1,9 @@
 package OtherCommonQuestions.SmallestPositiveInteger;
 
-import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
 
 /**
  * This is a demo task.
@@ -30,21 +33,22 @@ public class SmallestPositiveInteger {
     }
 
 
-    public static int getSmallestInteger(int[] numbers) {
-        Arrays.sort(numbers); // Sort the array.'
-        System.out.println(Arrays.toString(numbers));
-        for (int i=0; i< numbers.length; i++) {
-            if (i >= 1) {
-                int diff = Math.abs(numbers[i-1] - numbers[i]);
-                if (diff > 1) {
-                    if (numbers[i-1] < 0) {
-                        return 1;
-                    }
-                    return numbers[i-1] + 1;
-                }
+    public static int getSmallestInteger(int[] A) {
+        int N = A.length;
+        Set<Integer> set = new HashSet<>();
+        for (int a : A) {
+            if (a > 0) {
+                set.add(a);
             }
         }
 
-        return numbers[numbers.length -1] + 1;
+
+        for (int i = 1; i <= N + 1; i++) {
+            if (!set.contains(i)) {
+                return i;
+            }
+        }
+
+        return 0;
     }
 }
