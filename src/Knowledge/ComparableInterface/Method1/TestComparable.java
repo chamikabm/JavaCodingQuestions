@@ -12,7 +12,7 @@ public class TestComparable {
         empArr[2] = new Employee(5, "Lisa", 35, 5000);
         empArr[3] = new Employee(1, "Pankaj", 32, 50000);
 
-//sorting employees array using Comparable interface implementation
+        //sorting employees array using Comparable interface implementation
         Arrays.sort(empArr);
         System.out.println("Default Sorting of Employees list:\n" + Arrays.toString(empArr));
     }
