@@ -1,6 +1,8 @@
 package Knowledge.SortingWithComparableAndComparator.ComaratorInterface.Method1;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class TestComparator {
 
@@ -17,12 +19,18 @@ public class TestComparator {
         Arrays.sort(empArr, Employee.SalaryComparator);
         System.out.println("Employees list sorted by Salary:\n"+Arrays.toString(empArr));
 
-//sort employees array using Comparator by Age
+        //sort employees array using Comparator by Age
         Arrays.sort(empArr, Employee.AgeComparator);
         System.out.println("Employees list sorted by Age:\n"+Arrays.toString(empArr));
 
-//sort employees array using Comparator by Name
+        //sort employees array using Comparator by Name
         Arrays.sort(empArr, Employee.NameComparator);
+        System.out.println("Employees list sorted by Name:\n"+Arrays.toString(empArr));
+
+
+        // Sort Employee list using comparator
+        List<Employee> list = Arrays.asList(empArr);
+        Collections.sort(list, Employee.NameComparator);
         System.out.println("Employees list sorted by Name:\n"+Arrays.toString(empArr));
     }
 }

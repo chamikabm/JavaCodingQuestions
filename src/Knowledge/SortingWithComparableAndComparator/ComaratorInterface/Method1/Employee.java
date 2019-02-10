@@ -1,6 +1,7 @@
 package Knowledge.SortingWithComparableAndComparator.ComaratorInterface.Method1;
 
 import java.util.Comparator;
+import java.util.Objects;
 
 public class Employee implements Comparable<Employee> {
 
