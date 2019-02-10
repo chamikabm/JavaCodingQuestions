@@ -1,4 +1,4 @@
-package Knowledge.ComaratorInterface.Method1;
+package Knowledge.SortingWithComparableAndComparator.ComaratorInterface.Method1;
 
 import java.util.Comparator;
 

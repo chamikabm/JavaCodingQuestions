@@ -1,4 +1,4 @@
-package Knowledge.ComparableInterface.Method1;
+package Knowledge.SortingWithComparableAndComparator.ComparableInterface.Method1;
 
 import java.util.Arrays;
 
