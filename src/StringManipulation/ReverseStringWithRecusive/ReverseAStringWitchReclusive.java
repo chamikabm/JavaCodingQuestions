@@ -29,5 +29,16 @@ public class ReverseAStringWitchReclusive {
     public static void main(String a[]){
         ReverseAStringWitchReclusive srr = new ReverseAStringWitchReclusive();
         System.out.println("Result: "+srr.reverseString("Java2novice"));
+        System.out.println(reverseString2("Java2novice"));
+    }
+
+    public static String reverseString2(String str) {
+        //
+
+        if (str == null || str.length() <= 1) {
+            return str;
+        }
+
+        return str.substring(str.length() - 1) + reverseString2(str.substring(0, str.length() - 1));
     }
 }
