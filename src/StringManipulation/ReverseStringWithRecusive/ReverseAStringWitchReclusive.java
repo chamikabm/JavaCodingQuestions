@@ -28,7 +28,7 @@ public class ReverseAStringWitchReclusive {
 
     public static void main(String a[]){
         ReverseAStringWitchReclusive srr = new ReverseAStringWitchReclusive();
-        System.out.println("Result: "+srr.reverseString("Java2novice"));
+//        System.out.println("Result: "+srr.reverseString("Java2novice"));
         System.out.println(reverseString2("Java2novice"));
     }
 
@@ -39,6 +39,7 @@ public class ReverseAStringWitchReclusive {
             return str;
         }
 
-        return str.substring(str.length() - 1) + reverseString2(str.substring(0, str.length() - 1));
+//       return str.substring(str.length() - 1) + reverseString2(str.substring(0, str.length() - 1));
+        return reverseString2(str.substring(1)) + str.charAt(0);
     }
 }
