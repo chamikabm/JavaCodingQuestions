@@ -20,7 +20,7 @@ public class TestClass  extends SimpleClass {
         try {
             test();
         } catch (IllegalArgumentException | StackOverflowError e) {
-            e = new StackOverflowError("");
+//            e = new StackOverflowError("");
             e.printStackTrace();
             System.out.println(e);
         } catch (Exception e) {
