@@ -4,14 +4,15 @@ public class BubbleSortingOptimized {
 
     public static void bubble_srt(int array[]) {
         for (int i = 0; i < array.length ; i++) {
-            for (int j = 1; j < array.length; j++) {
+            for (int j = 1; j < array.length - i; j++) {
                 if (array[j] < array[j-1]) {
                     swapNumbers(j , j -1, array);
                 }
             }
+            System.out.println("Iteration : " + (i + 1));
+            printNumbers(array);
+            System.out.println();
         }
-
-        printNumbers(array);
     }
 
     private static void swapNumbers(int current, int previous, int[] array) {

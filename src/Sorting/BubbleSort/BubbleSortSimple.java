@@ -10,8 +10,6 @@ public class BubbleSortSimple {
                 }
             }
         }
-
-        printNumbers(array);
     }
 
     private static void swapNumbers(int current, int previous, int[] array) {
