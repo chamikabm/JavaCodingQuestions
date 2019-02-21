@@ -1,5 +1,8 @@
 package Sorting.BubbleSort;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class BubbleSortSimple {
 
     public static void bubble_srt(int array[]) {
@@ -10,6 +13,8 @@ public class BubbleSortSimple {
                 }
             }
         }
+
+        printNumbers(array);
     }
 
     private static void swapNumbers(int current, int previous, int[] array) {
@@ -19,11 +24,13 @@ public class BubbleSortSimple {
     }
 
     private static void printNumbers(int[] input) {
-
-        for (int i = 0; i < input.length; i++) {
-            System.out.print(input[i] + ", ");
-        }
-        System.out.println("\n");
+        Integer[] what = Arrays.stream(input).boxed().toArray(Integer[]::new);
+        List<Integer> arr = Arrays.asList(what);
+        StringBuilder p = new StringBuilder("");
+       for (int a : arr ) {
+            p.append(a).append(",");
+       }
+        System.out.println(p);
     }
 
     public static void main(String[] args) {

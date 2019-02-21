@@ -13,6 +13,8 @@ public class BubbleSortingOptimized {
             printNumbers(array);
             System.out.println();
         }
+
+        printNumbers(array);
     }
 
     private static void swapNumbers(int current, int previous, int[] array) {
