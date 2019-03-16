@@ -13,7 +13,7 @@ public class ConsumerBQ implements Runnable{
     public void run() {
         while (true) {
             try {
-                System.out.println("Consuming : "+sharedQ.take());
+                System.out.println("Consuming : " + sharedQ.take());
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
