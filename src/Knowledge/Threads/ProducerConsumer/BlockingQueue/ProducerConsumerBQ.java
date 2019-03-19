@@ -5,7 +5,7 @@ import java.util.concurrent.LinkedBlockingDeque;
 
 public class ProducerConsumerBQ {
     public static void main(String[] args) {
-        BlockingQueue sharedQ = new LinkedBlockingDeque();
+        BlockingQueue sharedQ = new LinkedBlockingDeque(5);
         Thread consumer = new Thread(new ConsumerBQ(sharedQ), "CONSUMER");
         Thread producer = new Thread(new ProducerBQ(sharedQ), "PRODUCER");
 

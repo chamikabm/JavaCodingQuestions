@@ -16,7 +16,7 @@ public class ProducerBQ implements Runnable {
             Random random = new Random();
             int num = random.nextInt(10);
             System.out.println("Producing  : "+num);
-            sharedQ.add(num);
+            sharedQ.offer(num);
         }
     }
 }

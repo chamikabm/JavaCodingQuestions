@@ -1,32 +1,21 @@
 package Knowledge.Test;
 
+import java.io.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
+import java.util.stream.IntStream;
+
 public class Test {
 
+    private static AtomicInteger atomicInteger = new AtomicInteger(4);
+
     public static void main(String[] args) {
-//        AbsClassImpl absClass = new AbsClassImpl();
-//        absClass.printName();
 
-        String s = "a/b/c/d";
-        String[] a1 = s.split("/");
-        System.out.println("split string using only regex:");
-        for (String string : a1) {
-            System.out.println(string);
-        }
-        System.out.println("split string using regex with limit:");
-        String[] a2 = s.split("/", 2);
-        for (String string : a2) {
-            System.out.println(string);
-        }
+        Semaphore semaphore = new Semaphore(3);
 
-        String a = "chamika";
-        String b = "chamika";
-        String c = new String("chamika");
-        System.out.println(a.equals(b));
-        System.out.println(a.equals(c));
-        System.out.println(a == b);
-        System.out.println(a == c);
 
-        System.out.println("chhhh");
-        System.out.println(a.substring(0, a.length() -1));
     }
 }

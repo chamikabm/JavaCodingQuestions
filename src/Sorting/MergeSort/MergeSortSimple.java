@@ -20,7 +20,6 @@ public class MergeSortSimple {
             // Merge the sorted halves.
             merge(arr, l , m, r);
         }
-
     }
 
     private static void merge(int[] arr, int l, int m, int r) {
